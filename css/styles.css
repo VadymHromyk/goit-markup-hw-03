@@ -1,15 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
 a,
 a:visited,
 a:hover,
 a:active {
   text-decoration: none;
   color: inherit;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
 }
 
 body {
@@ -21,6 +36,20 @@ body {
   letter-spacing: 0.02em;
 }
 
+.container {
+  max-width: 1128px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -28,6 +57,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.03em;
   line-height: 1.17;
+  margin-right: 76px;
 }
 
 .logo-first-word {
@@ -36,6 +66,11 @@ body {
 
 header .logo-second-word {
   color: #2e2f42;
+}
+
+.nav-items {
+  display: flex;
+  gap: 40px;
 }
 
 .nav-items a {
@@ -47,6 +82,15 @@ header .logo-second-word {
 .nav-items a:hover,
 .nav-items a:focus {
   color: #404bbf;
+}
+
+.address-section {
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-list a {
@@ -62,15 +106,23 @@ header .logo-second-word {
 
 .hero-section {
   background-color: #2e2f42;
+  height: 600px;
+  padding-top: 188px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero-section button {
+.hero-button {
   font-weight: 500;
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
   letter-spacing: 0.04em;
   line-height: 1.5;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
 }
 
 .hero-section button:hover,
@@ -84,6 +136,21 @@ header .logo-second-word {
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  padding-bottom: 48px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-title {
