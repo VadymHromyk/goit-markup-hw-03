@@ -37,9 +37,9 @@ body {
 }
 
 .container {
-  max-width: 1128px;
-  padding-left: 0;
-  padding-right: 0;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -153,12 +153,49 @@ header .logo-second-word {
   overflow: hidden;
 }
 
+.features-list {
+  display: flex;
+  gap: 24px;
+  padding: 120px 0;
+}
+
+.feature-card-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e2f42;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  padding-bottom: 8px;
+}
+
+.ourteam-section {
+  background-color: #f4f4fd;
+}
+
+.ourteam-container {
+  padding-bottom: 120px;
+}
+
 .section-title {
   font-size: 36px;
   letter-spacing: 0.02em;
   line-height: 1.11;
   color: #2e2f42;
   text-align: center;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+
+.ourteam-list {
+  display: flex;
+  gap: 24px;
+}
+
+.ourteam-card {
+  background-color: #ffffff;
+  width: 264px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .card-title {
@@ -167,19 +204,36 @@ header .logo-second-word {
   color: #2e2f42;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
-
-.ourteam-section {
-  background-color: #f4f4fd;
-}
-
-.ourteam-card {
-  background-color: #ffffff;
-}
-
-.ourteam-card h3,
-.ourteam-card p {
+  padding-top: 32px;
+  padding-bottom: 8px;
   text-align: center;
+}
+
+.card-text {
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.ourportfolio-container {
+  padding-bottom: 120px;
+}
+
+.ourportfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.portfolio-card-content {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.ourportfolio-text-align {
+  text-align: start;
 }
 
 .footer-section {
@@ -189,4 +243,17 @@ header .logo-second-word {
 
 footer .logo-second-word {
   color: #f4f4fd;
+}
+
+.footer-data {
+  width: 264px;
+}
+
+.footer-container {
+  padding: 100px 0;
+}
+
+.footer-logo {
+  padding-bottom: 16px;
+  display: inline-block;
 }
