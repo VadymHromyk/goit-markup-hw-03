@@ -44,10 +44,13 @@ body {
   margin-right: auto;
 }
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-section {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -74,10 +77,11 @@ header .logo-second-word {
   padding: 24px 0;
 }
 
-.nav-items a {
+.nav-item {
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  display: inline-block;
 }
 
 .nav-items a:hover,
@@ -107,8 +111,7 @@ header .logo-second-word {
 
 .hero-section {
   background-color: #2e2f42;
-  height: 600px;
-  padding-top: 188px;
+  padding: 188px 0;
 }
 
 .hero-container {
@@ -157,10 +160,18 @@ header .logo-second-word {
   overflow: hidden;
 }
 
+.features-section {
+  padding: 120px 0;
+}
+
 .features-list {
   display: flex;
   gap: 24px;
-  padding: 120px 0;
+}
+
+.features-list li {
+  max-width: calc((1138px - 72px) / 4);
+  width: 100%;
 }
 
 .feature-card-title {
@@ -174,10 +185,7 @@ header .logo-second-word {
 
 .ourteam-section {
   background-color: #f4f4fd;
-}
-
-.ourteam-container {
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .section-title {
@@ -186,7 +194,6 @@ header .logo-second-word {
   line-height: 1.11;
   color: #2e2f42;
   text-align: center;
-  padding-top: 120px;
   padding-bottom: 72px;
 }
 
@@ -200,6 +207,15 @@ header .logo-second-word {
   width: 264px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  border-radius: 0 0 4px 4px;
+}
+
+.ourteam-card img {
+  width: 264px;
+}
+
+.ourteam-card-content {
+  padding: 32px 16px;
 }
 
 .card-title {
@@ -208,32 +224,39 @@ header .logo-second-word {
   color: #2e2f42;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
   padding-bottom: 8px;
   text-align: center;
 }
 
 .card-text {
   text-align: center;
-  padding-bottom: 32px;
 }
 
-.ourportfolio-container {
-  padding-bottom: 120px;
+.ourportfolio-section {
+  padding: 120px 0;
 }
 
 .ourportfolio-list {
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.ourportfolio-card {
+  width: 360px;
+}
+
+.ourportfolio-card img {
+  width: 100%;
 }
 
 .portfolio-card-content {
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  padding-left: 16px;
-  padding-right: 16px;
+  width: 100%;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+  box-sizing: border-box;
 }
 
 .ourportfolio-text-align {
