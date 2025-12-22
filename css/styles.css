@@ -74,7 +74,6 @@ header .logo-second-word {
 .nav-items {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .nav-item {
@@ -82,6 +81,7 @@ header .logo-second-word {
   color: #2e2f42;
   letter-spacing: 0.02em;
   display: inline-block;
+  padding: 24px 0;
 }
 
 .nav-items a:hover,
@@ -102,6 +102,7 @@ header .logo-second-word {
   font-style: normal;
   color: #434455;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .address-list a:hover,
@@ -212,6 +213,7 @@ header .logo-second-word {
 
 .ourteam-card img {
   width: 264px;
+  height: 260px;
 }
 
 .ourteam-card-content {
@@ -243,12 +245,9 @@ header .logo-second-word {
   column-gap: 24px;
 }
 
-.ourportfolio-card {
-  width: 360px;
-}
-
 .ourportfolio-card img {
-  width: 100%;
+  width: 360px;
+  height: 300px;
 }
 
 .portfolio-card-content {
